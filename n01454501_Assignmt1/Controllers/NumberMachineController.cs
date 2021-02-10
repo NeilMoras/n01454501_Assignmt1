@@ -13,9 +13,9 @@ namespace n01454501_Assignmt1.Controllers
      /// </summary>
      /// <param name="id">input id</param>
      /// <returns> 
-     /// input id{10} ->    ?
-     /// input  id{-5} - >
-     /// input id{30}  -> 
+     /// input id{10} ->    32
+     /// input  id{-5} - >  -17
+     /// input id{30}  ->    99
      /// </returns>
         // GET api/NumberMachine/10
         public IEnumerable<int> Get(int id)
