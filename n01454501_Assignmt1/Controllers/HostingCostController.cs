@@ -9,10 +9,19 @@ namespace n01454501_Assignmt1.Controllers
 {
     public class HostingCostController : ApiController
     {/// <summary>
-     ///  Add the cost per fortnite to the     
+     ///  Giving out a responsive cost output based on the number of hosting days{id} by calculating the cost fortnitly  basis , providing the tax and then outputting the total   
+     ///  1.approach is by dividing the total number of days with 14 days(fortnite) since the cost is 5.50$/ FN and adds up after every fortnite to get the correct number of days as an output.
+     ///  2. add 1 to the total days as 14th days is charged the 2 fortnite amount as per the problem.
+     ///  3.Multiply 5.50 with thetotal number of days.
+     ///   4. multiply the HST with the total cost.
+     ///   5. add hthe hst to the total cost to putput the total after tax
+     ///   6. round all the outputs to 2 decimals to provide exact output.
+     ///   7. return the output by concatination of strings and numbers as an output to the user
+     ///  
      /// </summary>
-     /// <param name="id"></param>
-     /// <returns></returns>
+     /// <param name="id">int id</param>
+     /// <returns>Returns the cost based on the number of days elasped and charged on fortnitely basis(after every 14 days)</returns>
+     ///  GET api/Hosting Cost/0.
         public IEnumerable<string> Get(int id)
 
 
